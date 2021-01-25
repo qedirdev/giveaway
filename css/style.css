@@ -4547,6 +4547,11 @@ p {
   padding-top: 10px;
 }
 
+.row>*{
+  padding-right: 0;
+  padding-left: 0;
+}
+
 @media only screen and (max-width: 768px){
   .buttons{
     justify-content: flex-start !important;
@@ -4559,8 +4564,14 @@ p {
     margin-bottom: 10px;
   }
 
-  .row>*{
-    background: transparent !important;
+  .padding{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .row{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 
   .mt-4{
@@ -4584,7 +4595,51 @@ p {
     padding-left: 15px !important;
   }
 
+  .demo-card{
+    width: 350px !important;
+  }
+
+  .statistics-number{
+    font-size: 20px;
+  }
+
+  .statistics-text{
+    font-size: 14px;
+  }
+
+  .card-head-text{
+    font-size: 20px;
+    padding: 14px 8px 14px;
+  }
+
+  .socials-title{
+    font-size: 16px;
+  }
+
+  .links-text{
+    padding-left: 7px;
+    font-size: 14px;
+  }
+
+  .links-num{
+    padding: 0px 8px;
+    font-size: 15px;
+  }
+
   .flipcard-wrapper{
     flex-direction: column !important;
   }
+
+  .flipcard{
+    width: 340px !important;
+    height: 200px;
+  }
+
+  .front-header{
+    height: 150px;
+  }
+
+
+
+
 }
