@@ -4423,6 +4423,10 @@ p {
   display: flex;
 }
 
+.flipcard{
+  margin-left: 15px !important;
+}
+
 .flip-link{
   color: #000;
   display: inline-flex;
