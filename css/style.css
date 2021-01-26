@@ -4579,6 +4579,36 @@ p {
     margin-top: 0 !important;
   }
 
+  .socials-card{
+    width: 100% !important;
+  }
+  
+  .flip-front{
+    transform: perspective(600px) rotateY(0deg);
+    border-radius: 0 0 6px 6px;
+  }
+  
+  .flip-back{
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      color: #ffffff;
+      border-radius: 6px;
+      background-color: #2f363b;
+      font-size: 17px;
+      transform: perspective(600px) rotateY(180deg);
+  }
+  
+  .flipcard:hover > .flip-front{
+    transform: perspective(600px) rotateY(0deg);
+    border-radius: 0 0 6px 6px;
+    color: #000;
+  }
+  
+  .flipcard:hover > .flip-back{
+    transform: perspective(600px) rotateY(180deg);
+  }
+
   /* #topnav{
     position: relative !important;
   }
@@ -4594,6 +4624,11 @@ p {
 
   #topnav .navigation-menu li a{
     padding-left: 15px !important;
+  }
+
+  .flip-link, .flipcard{
+    width: 100%;
+    margin-right: 0px !important;
   }
 
   .demo-card{
