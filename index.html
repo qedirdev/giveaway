@@ -13,14 +13,12 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <!-- Magnific -->
         <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <!-- Slider -->               
-        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
-        <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
+        <!-- Slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!-- Main Css -->
         <!-- Custom Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
@@ -37,7 +35,7 @@
             <div class="container">
                 <!-- Logo container-->
                 <div>
-                    <a class="logo" href="#">
+                    <a class="logo" href="index.html">
                         <img src="images/logo-dark.png" height="21" alt="">
                     </a>
                 </div> 
@@ -344,39 +342,20 @@
                     <div class="card-head-text">
                         Gleam Demo Competition
                     </div>
-                    <div class="card-slides">
 
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./images/startup/bg.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./images/startup/bg.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./images/startup/bg.jpg" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </a>
-                          </div>
-
-                        <div class="card-slides-text">
-                            Interested to know more about how Gleam works? Play around with this live demo so you can get a feel for the user experience and workflow.
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1527901031195-a21e7b21052c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=890&q=80" alt=""></div>
+                          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80" alt=""></div>
+                          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt=""></div>
                         </div>
-                    </div>
+
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
 
                     <div class="card-socials">
                         <div class="socials-title">
@@ -864,9 +843,8 @@
         <!-- Magnific Popup -->
         <script src="js/jquery.magnific-popup.min.js"></script> 
         <script src="js/magnific.init.js"></script> 
-        <!-- SLIDER -->
-        <script src="js/owl.carousel.min.js "></script>
-        <script src="js/owl.init.js "></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- Feather icon -->
         <script src="js/feather.min.js"></script>
         <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js"></script>

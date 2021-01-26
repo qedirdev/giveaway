@@ -2934,7 +2934,7 @@ p {
   font-size: 18px;
 }
 
-.swiper-slider-hero .swiper-container,
+/* .swiper-slider-hero .swiper-container,
 .swiper-slider-hero .swiper-slide .slide-inner {
   position: absolute;
   left: 0;
@@ -3003,7 +3003,7 @@ p {
 .swiper-slider-hero .swiper-container-horizontal
 > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 13px;
-}
+} */
 
 .bg-digital-marketing {
   background: radial-gradient(circle at 80% 50%, rgba(60, 72, 88, 0.05) 0%, rgba(60, 72, 88, 0.05) 33.333%, rgba(206, 212, 218, 0.1) 33.333%, rgba(206, 212, 218, 0.1) 66.666%, rgba(73, 80, 87, 0.1) 66.666%, rgba(73, 80, 87, 0.1) 99.999%), linear-gradient(45deg, #00c9a7, #2d84fb);
@@ -3038,7 +3038,7 @@ p {
   z-index: 1;
 }
 
-.main-slider .slides .bg-slider {
+/* .main-slider .slides .bg-slider {
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -3072,7 +3072,7 @@ p {
 
 .flex-control-nav {
   display: none;
-}
+} */
 
 .bg-animation-left:after {
   content: "";
@@ -3120,7 +3120,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .bg-home,
   .bg-half-170,
   .bg-half-260,
@@ -3142,7 +3142,7 @@ p {
   .attach-icons-hero {
     border-bottom: 1px solid #e9ecef;
   }
-}
+} */
 
 @media (max-width: 576px) {
   .bg-animation-left.ani-travel:after {
@@ -4667,4 +4667,51 @@ p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+
+/* Swiper */
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-pagination-bullet{
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 30px;
+  color: #fff;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
