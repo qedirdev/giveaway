@@ -4423,18 +4423,14 @@ p {
   display: flex;
 }
 
-.flipcard{
-  margin-left: 15px !important;
-}
-
 .flip-link{
   color: #000;
   display: inline-flex;
 }
 
 .flip-link, .flipcard{
-  width: 380px;
-  height: 230px;
+  width: 320px;
+  height: 200px;
   position: relative;
   margin-bottom: 30px;
   margin-right: 15px;
@@ -4452,7 +4448,7 @@ p {
 
 .front-header{
   background-image:url(../images/social-media/giveaways.jpg);
-  height: 180px;
+  height: 150px;
   border-radius: 6px 6px 0 0;
   background-repeat: no-repeat;
   background-position: center;
